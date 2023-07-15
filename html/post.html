@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- TODO: Include Font Awesome file here -->
+  <!-- TODO: Include Google Fonts file here -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/post.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Montez|Roboto|Ubuntu+Mono&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <a class="logo-title">ScriBBler</a>
+        <span class="prajwal">
+            <button id="myBtn">Sign Up</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content3">
+                    <span class="close">&times;</span>
+                    <form>
+                        <h1 class="h1">Get Started</h1>
+                        <hr>
+                        <label>Name</label><br>
+                        <input type="text" placeholder="Enter your Name" class="k"><br><br>
+                        <label>username</label><br>
+                        <input type="text" placeholder="Enter your username" class="k"><br><br>
+                        <label>Password</label><br>
+                        <input type="password" placeholder="Enter your password" class="k"><br><br>
+                        <label>Confirm Password</label><br>
+                        <input type="password" placeholder="Re-enter your password" class="k"><br><br>
+
+                        <input type="submit" class="value" value="Sign Up">
+                    </form>
+                </div>
+            </div>
+
+
+
+            <button id="myBtn1">Sign In</button>
+            <div id="myModal1" class="modal1">
+                <div class="modal-content1">
+                    <span class="close">&times;</span>
+                    <form>
+                        <h1 class="h1">Welcome Back!</h1>
+                        <hr>
+                        <label>username</label><br>
+                        <input type="text" placeholder="Enter your username" class="k"><br><br>
+                        <label>Password</label><br>
+                        <input type="password" placeholder="Enter your password" class="k"><br><br>
+                        <input type="submit" class="value" value="Sign In">
+                        <p>Not a member? <a>Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+        </span>
+
+        <p class="middleText">Explore, Imagine, Create</p>
+    </header>
+    <div class="post container">
+        <div class="heading-content" id="edit-heading" contenteditable="true"></div>
+        <div class="author">
+            <div class="author-name"></div>
+            <div>
+                <button id="edit-button" type="button" class="btn btn-danger" onclick="onEdit()">Edit<i
+                        class="fa fa-edit" style="padding-left: 5px;"></i></button>
+            </div>
+        </div>
+
+
+        <div class="post-content" id="edit-contenttext" contenteditable="true">
+        </div>
+
+        <button id="like-button" type="button" class="btn btn-danger" onclick="countLikes()"><i
+                class="fa fa-thumbs-up"></i><span id="likeButton">Like</span></button>
+        <div id="showCount">Be the first one to like this</div>
+
+        <textarea id="comment" rows="4" cols="135" placeholder="Leave a comment..." name="comment"></textarea>
+        <div><button id="comment-button" type="button" class="btn btn-danger"
+                onclick="addComment(comment)">Comment</button></div>
+        <div id="allCommentsHeading">All Comments</div>
+        <div class="comment-container">
+            <div id="comments">
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src=../js/post.js> </script>
+    <script src="../js/header.js"></script>
+
+  <!-- TODO: Include all your code for the header and home page here -->
+</body>
+
+
+</html>
